@@ -1,0 +1,149 @@
+@keyframes glide-button-down{
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  @keyframes glide-button-up{
+    0% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translate(0);
+    }
+}
+
+@keyframes glide-picture-right1{
+  0% {
+    transform: translateX(-1000px);
+  }
+  25% {
+    transform: translateX(-500px);
+  }
+  50% {
+    opacity: 100%;
+    transform: translateX(700px);
+  }
+  51% {
+    opacity: 0%;
+  }
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    transform: translateX(-3000px);
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@keyframes glide-picture-right2{
+  0% {
+    transform: translateX(-1000px);
+  }
+  25% {
+    transform: translateX(-500px);
+  }
+  50% {
+    opacity: 100%;
+    transform: translateX(700px);
+  }
+  51% {
+    opacity: 0%;
+  }
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    transform: translateX(-3000px);
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@keyframes glide-picture-right3{
+  0% {
+    transform: translateX(-1000px);
+  }
+  25% {
+    transform: translateX(-500px);
+  }
+  50% {
+    opacity: 100%;
+    transform: translateX(700px);
+  }
+  51% {
+    opacity: 0%;
+  }
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    transform: translateX(-3000px);
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@keyframes glide-picture-right4{
+  0% {
+    transform: translateX(-1000px);
+  }
+  25% {
+    transform: translateX(-500px);
+  }
+  50% {
+    opacity: 100%;
+    transform: translateX(700px);
+  }
+  51% {
+    opacity: 0%;
+  }
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    transform: translateX(-3000px);
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@keyframes work-glide {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-223px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

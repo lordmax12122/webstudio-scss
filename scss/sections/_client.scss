@@ -1,0 +1,51 @@
+.client-list {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .client-item {
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    display: flex;
+    padding: 16px 32px;
+  }
+  
+  .client-item:hover > .client-items {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2196f3;
+  }
+  .client-item:hover {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #2196f3;
+  }
+  
+  .client-title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+  }
+  
+  .client {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+  
+  .client-item {
+    fill: #afb1b8;
+    width: 170px;
+    height: 92px;
+  }
+  
+  .team-icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 42px;
+  }
+  

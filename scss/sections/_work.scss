@@ -1,0 +1,47 @@
+.work-section {
+    padding-bottom: 94px;
+  }
+  
+  .work-title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+  }
+  
+  .work-img {
+    width: 370px;
+    height: 294px;
+  }
+  
+  .work-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .work-box {
+    position: relative;
+  }
+  
+  .work-box > .work-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 4px;
+    background: rgba(47, 48, 58, 0.8);
+    color: #eee;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation-name: work-glide;
+    animation-duration: 3s;
+  }
+  

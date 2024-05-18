@@ -1,0 +1,142 @@
+header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+.main-pages {
+    border: solid 1px #ececec;
+  }
+  
+  .main-pages-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-pages {
+    color: var(--title-color);
+  }
+  
+  .main-pages-list {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .main-pages-logo {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+  }
+  
+  .secondpart-logo-header {
+    color: var(--links-color);
+    margin-right: 93px;
+  }
+  
+  .secondpart-logo-footer {
+    color: var(--title-color);
+  }
+
+  .main-pages-link {
+    color: var(--links-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    position: relative;
+  }
+  
+  .main-pages-link:hover {
+    color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .main-pages-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    margin-top: 28px;
+    background-color: #2196f3;
+  }
+  
+  .main-pages-item:hover > .main-pages-link::after {
+    opacity: 1;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .header-link-line {
+    color: #2196f3;
+  }
+  
+  .header-link-line:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 1;
+    position: absolute;
+    margin-top: 28px;
+    opacity: 1;
+  }
+  
+  .contacts-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+  }
+  
+  .contacts-malito {
+    color: var(--description-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+  }
+  
+  .contacts-tel {
+    color: var(--description-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+  }
+  
+  .contacts-malito:hover {
+    color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .contacts-tel:hover {
+    color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .header-contacts-list-item .header-contacts-link {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+  
+  .contacts-link:hover > .header-icon {
+    fill: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .header-icon {
+    fill: #757575;
+  }
+  
+  .contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
