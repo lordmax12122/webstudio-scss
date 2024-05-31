@@ -1,7 +1,6 @@
 .team-section {
     background: #f5f4fa;
-    padding-bottom: 94px;
-    padding-top: 94px;
+    @include section-padding ($top: 94px, $bottom: 94px);
   }
   
   .team-list {

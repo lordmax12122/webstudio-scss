@@ -1,5 +1,6 @@
 .portfolio {
     padding-bottom: 94px;
+    @include section-padding ($bottom: 94px);
   }
   
   .portfolio-list {

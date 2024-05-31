@@ -31,8 +31,7 @@
   }
   
   .client {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    @include section-padding ($top: 94px, $bottom: 94px);
   }
   
   .client-item {

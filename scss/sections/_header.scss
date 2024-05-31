@@ -1,6 +1,5 @@
 header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    @include section-padding ($top: 24px, $bottom: 25px);
   }
 
 .main-pages {
@@ -41,9 +40,7 @@ header {
 
   .main-pages-link {
     color: var(--links-color);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
+    @extend %header-text;
     letter-spacing: 0.28px;
     position: relative;
   }
@@ -93,17 +90,13 @@ header {
   
   .contacts-malito {
     color: var(--description-color);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
+    @extend %header-text;
     letter-spacing: 0.28px;
   }
   
   .contacts-tel {
     color: var(--description-color);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
+    @extend %header-text;
     letter-spacing: 0.28px;
   }
   

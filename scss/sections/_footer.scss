@@ -38,8 +38,7 @@
   
   .footer-pages {
     background: #2f303a;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    @include section-padding ($top: 60px, $bottom: 60px);
   }
   
   .footer-box {
