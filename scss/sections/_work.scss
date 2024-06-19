@@ -1,8 +1,7 @@
-.work-section {
-    @include section-padding ($bottom: 94px);
-  }
-  
-  .work-title {
+.work {
+  @include section-padding($bottom: 94px);
+
+  &__title {
     color: var(--text-color);
     text-align: center;
     font-size: 36px;
@@ -10,24 +9,24 @@
     line-height: 1.16;
     letter-spacing: 1.08px;
   }
-  
-  .work-img {
+
+  &__img {
     width: 370px;
     height: 294px;
   }
-  
-  .work-list {
+
+  &__list {
     display: flex;
     align-items: center;
     gap: 30px;
     margin-top: 50px;
   }
-  
-  .work-box {
+
+  &__box {
     position: relative;
   }
-  
-  .work-box > .work-description {
+
+  &__box > &__description {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,4 +43,4 @@
     animation-name: work-glide;
     animation-duration: 3s;
   }
-  
+}
