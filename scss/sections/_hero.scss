@@ -1,23 +1,23 @@
-.effective-choices-section {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/background.webp);
-    @include section-padding ($top: 200px, $bottom: 200px);
-    width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-  }
-  
-  .effective-choices-title {
+.effective {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.webp);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+
+  &__choices-title {
     margin-bottom: 30px;
     color: var(--title-color);
     text-align: center;
-  
+
     margin-left: auto;
     margin-right: auto;
     font-size: 44px;
@@ -30,9 +30,8 @@
     animation-name: glide-button-down;
     animation-duration: 1s;
   }
-  
 
-  .effective-choices-button {
+  &__choices-button {
     border: none;
     border-radius: 4px;
     color: var(--title-color);
@@ -51,3 +50,4 @@
     animation-name: glide-button-up;
     animation-duration: 1s;
   }
+}

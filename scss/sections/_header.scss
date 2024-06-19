@@ -1,26 +1,23 @@
-header {
-    @include section-padding ($top: 24px, $bottom: 25px);
-  }
+.main {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: solid 1px #ececec;
 
-.main-pages {
-    border: solid 1px #ececec;
-  }
-  
-  .main-pages-container {
+  &__pages-container {
     display: flex;
     align-items: center;
   }
-  
-  .main-pages {
+
+  &__pages {
     color: var(--title-color);
   }
-  
-  .main-pages-list {
+
+  &__pages-list {
     display: flex;
     gap: 50px;
   }
-  
-  .main-pages-logo {
+
+  &__pages-logo {
     color: var(--accent-color);
     font-family: Raleway;
     font-size: 26px;
@@ -28,29 +25,25 @@ header {
     line-height: 1.38;
     letter-spacing: 0.78px;
   }
-  
-  .secondpart-logo-header {
+
+  &__secondpart-logo {
     color: var(--links-color);
     margin-right: 93px;
   }
-  
-  .secondpart-logo-footer {
-    color: var(--title-color);
-  }
 
-  .main-pages-link {
+  &__pages-link {
     color: var(--links-color);
     @extend %header-text;
     letter-spacing: 0.28px;
     position: relative;
   }
-  
-  .main-pages-link:hover {
+
+  &__pages-link:hover {
     color: var(--accent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
-  
-  .main-pages-link::after {
+
+  &__pages-link::after {
     content: "";
     display: block;
     position: absolute;
@@ -61,17 +54,17 @@ header {
     margin-top: 28px;
     background-color: #2196f3;
   }
-  
-  .main-pages-item:hover > .main-pages-link::after {
+
+  &__pages-item:hover > &__pages-link::after {
     opacity: 1;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
-  
-  .header-link-line {
+
+  &__link-line {
     color: #2196f3;
   }
-  
-  .header-link-line:after {
+
+  &__link-line:after {
     content: "";
     display: block;
     width: 100%;
@@ -81,55 +74,56 @@ header {
     margin-top: 28px;
     opacity: 1;
   }
-  
-  .contacts-list {
+
+  &__contacts-list {
     display: flex;
     gap: 50px;
     margin-left: auto;
   }
-  
-  .contacts-malito {
+
+  &__contacts-malito {
     color: var(--description-color);
     @extend %header-text;
     letter-spacing: 0.28px;
   }
-  
-  .contacts-tel {
+
+  &__contacts-tel {
     color: var(--description-color);
     @extend %header-text;
     letter-spacing: 0.28px;
   }
-  
-  .contacts-malito:hover {
+
+  &__contacts-malito:hover {
     color: var(--accent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
-  
-  .contacts-tel:hover {
+
+  &__contacts-tel:hover {
     color: var(--accent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
-  
-  .header-contacts-list-item .header-contacts-link {
+
+  &__contacts-list-item &__contacts-link {
     color: #757575;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
   }
-  
-  .contacts-link:hover > .header-icon {
+
+  &__contacts-link:hover > &__icon {
     fill: var(--accent-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
-  
-  .header-icon {
+
+  &__icon {
     fill: #757575;
   }
-  
-  .contacts-link {
+
+  &__contacts-link {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
+}
