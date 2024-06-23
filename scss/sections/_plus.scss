@@ -1,6 +1,5 @@
 .plus {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section-padding($top: 94px, $bottom: 94px);
 
   &__list {
     display: flex;
@@ -36,7 +35,7 @@
   }
 
   &__subtitle {
-    color: var(--text-color);
+    color: $text-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -47,7 +46,7 @@
   }
 
   &__description {
-    color: var(--description-color);
+    color: $description-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;

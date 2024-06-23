@@ -1,6 +1,5 @@
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section-padding($top: 94px, $bottom: 94px);
 
   &__list {
     display: flex;

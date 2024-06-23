@@ -1,7 +1,6 @@
 .button {
   color: var(--title-color);
-  padding-bottom: 50px;
-  padding-top: 94px;
+  @include section-padding($top: 94px, $bottom: 50px);
 
   &__list {
     display: flex;
@@ -35,7 +34,7 @@
     line-height: 26px;
     /* 162.5% */
     letter-spacing: 0.48px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   }

@@ -1,10 +1,9 @@
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @include section-padding($top: 60px, $bottom: 60px);
 
   &__pages-logo {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 1.38;
@@ -18,7 +17,7 @@
   }
 
   &__pages-contacts-address {
-    color: var(--article-text);
+    color: $article-text;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -86,7 +85,7 @@
   }
 
   &__secondpart-logo {
-    color: var(--title-color);
+    color: $title-color;
   }
 
   &__box-title {
@@ -129,7 +128,7 @@
   }
 
   &__box-input::placeholder {
-    color: var(--commandtext);
+    color: $title-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;

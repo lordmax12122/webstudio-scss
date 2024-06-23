@@ -1,7 +1,6 @@
 .main {
   border: solid 1px #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  @include section-padding($top: 24px, $bottom: 25px);
 
   &__pages-container {
     display: flex;
@@ -9,7 +8,7 @@
   }
 
   &__pages {
-    color: var(--title-color);
+    color: $title-color;
   }
 
   &__pages-list {
@@ -18,7 +17,7 @@
   }
 
   &__pages-logo {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -27,19 +26,19 @@
   }
 
   &__secondpart-logo {
-    color: var(--links-color);
+    color: $links-color;
     margin-right: 93px;
   }
 
   &__pages-link {
-    color: var(--links-color);
+    color: $links-color;
     @extend %header-text;
     letter-spacing: 0.28px;
     position: relative;
   }
 
   &__pages-link:hover {
-    color: var(--accent-color);
+    color: $accent-color;
     @extend %transition;
   }
 
@@ -82,24 +81,24 @@
   }
 
   &__contacts-malito {
-    color: var(--description-color);
+    color: $description-color;
     @extend %header-text;
     letter-spacing: 0.28px;
   }
 
   &__contacts-tel {
-    color: var(--description-color);
+    color: $description-color;
     @extend %header-text;
     letter-spacing: 0.28px;
   }
 
   &__contacts-malito:hover {
-    color: var(--accent-color);
+    color: $accent-color;
     @extend %transition;
   }
 
   &__contacts-tel:hover {
-    color: var(--accent-color);
+    color: $accent-color;
     @extend %transition;
   }
 
@@ -112,7 +111,7 @@
   }
 
   &__contacts-link:hover > &__icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
     @extend %transition;
   }
 

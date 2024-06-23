@@ -1,7 +1,6 @@
 .team {
     background: #f5f4fa;
-    padding-bottom: 94px;
-    padding-top:94px;
+    @include section-padding($top: 94px, $bottom: 94px);
 
   
 &__list {
@@ -25,7 +24,7 @@
   }
   
 &__title {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     @extend %title-text;
     letter-spacing: 1.08px;
@@ -33,7 +32,7 @@
   }
   
 &__subtitle {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -43,7 +42,7 @@
   }
   
 &__description {
-    color: var(--description-color);
+    color: $description-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
