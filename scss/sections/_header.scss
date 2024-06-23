@@ -1,6 +1,7 @@
 .main {
   border: solid 1px #ececec;
-  @include section-padding($top: 24px, $bottom: 25px);
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   &__pages-container {
     display: flex;

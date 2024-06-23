@@ -1,16 +1,3 @@
-:root {
-  --grid-card: 3;
-  --accent-color: #2196f3;
-  --text-color: #212121;
-  --title-color: #fff;
-  --description-color: #757575;
-  --info-color: rgba(255, 255, 255, 0.6);
-  --links-color: #212121;
-  --article-text: #ffffff;
-  --footer-text: #ffffff;
-  --background-text: #eeeeee;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -44,15 +31,13 @@ a, li {
 
 .button {
   color: var(--title-color);
-  padding-top: 94px;
   padding-bottom: 50px;
+  padding-top: 94px;
 }
-@e &__list {
-  .button {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-  }
+.button__list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 .button__a {
   border: none;
@@ -84,8 +69,8 @@ a, li {
 
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team__list {
   display: flex;
@@ -153,9 +138,9 @@ a, li {
 }
 
 .main {
+  border: solid 1px #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
-  border: solid 1px #ececec;
 }
 .main__pages-container {
   display: flex;
@@ -529,7 +514,7 @@ a, li {
 }
 
 .portfolio {
-  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .portfolio__list {
   grid-gap: 30px;
@@ -537,7 +522,6 @@ a, li {
   flex-wrap: wrap;
 }
 .portfolio__item {
-  --grid-card: 3;
   border: 1px solid #eee;
   background: #fff;
   display: inline;

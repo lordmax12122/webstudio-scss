@@ -4,7 +4,8 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/background.webp);
-  @include section-padding($top: 200px, $bottom: 200px);
+  padding-top: 200px;
+  padding-bottom: 200px;
   width: 1600px;
   height: 600px;
   margin-left: auto;

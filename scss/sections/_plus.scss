@@ -1,5 +1,6 @@
 .plus {
-  @include section-padding($top: 94px, $bottom: 94px);
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   &__list {
     display: flex;
