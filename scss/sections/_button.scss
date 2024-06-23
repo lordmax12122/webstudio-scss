@@ -1,7 +1,6 @@
 .button {
   color: var(--title-color);
-  padding-top: 94px;
-  padding-bottom: 50px;
+  @include section-padding($top: 94px, $bottom: 50px);
 
   &__list {
     display: flex;

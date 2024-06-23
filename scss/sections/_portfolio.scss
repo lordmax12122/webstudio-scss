@@ -1,5 +1,5 @@
 .portfolio {
-  padding-bottom: 94px;
+  @include section-padding($top: 94px);
 
   &__list {
     grid-gap: 30px;

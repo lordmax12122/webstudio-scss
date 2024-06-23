@@ -47,10 +47,12 @@ a, li {
   padding-top: 94px;
   padding-bottom: 50px;
 }
-.button__list {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
+@e &__list {
+  .button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
 }
 .button__a {
   border: none;

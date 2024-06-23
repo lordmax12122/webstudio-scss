@@ -1,7 +1,6 @@
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @include section-padding($top: 60px, $bottom: 60px);
 
   &__pages-logo {
     color: var(--accent-color);

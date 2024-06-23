@@ -1,5 +1,5 @@
 .work {
-  padding-bottom: 94px;
+  @include section-padding($bottom: 94px);
 
   &__title {
     color: var(--text-color);
