@@ -1,37 +1,57 @@
 .team {
-    background: #f5f4fa;
-    @include section-padding($top: 94px, $bottom: 94px);
+  background: #f5f4fa;
+  @include section-padding($top: 94px, $bottom: 94px);
 
-  
-&__list {
+  &__list {
     display: flex;
     align-items: center;
     gap: 30px;
+
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+    }
   }
-  
-&__item {
+
+  &__item {
     border-radius: 0px 0px 4px 4px;
     background: #fff;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    @media screen and (max-width: 767px) {
+      width: 410px;
+      height: 622px;
+    }
   }
-  
-&__img {
+
+  &__img {
     width: 270px;
-    height: 260px;
+    height: 230px;
     flex-shrink: 0;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      width: 410px;
+height: 460px;
+    }
   }
-  
-&__title {
+
+  &__title {
     color: $text-color;
     text-align: center;
     @extend %title-text;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
+    font-size: 28px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
-  
-&__subtitle {
+
+  &__subtitle {
     color: $text-color;
     text-align: center;
     font-size: 16px;
@@ -40,8 +60,8 @@
     letter-spacing: 0.48px;
     margin-bottom: 10px;
   }
-  
-&__description {
+
+  &__description {
     color: $description-color;
     text-align: center;
     font-size: 16px;
@@ -50,22 +70,22 @@
     letter-spacing: 0.48px;
     margin-bottom: 30px;
   }
-  
-&__icon {
+
+  &__icon {
     fill: #afb1b8;
   }
-  
-&__link:hover > .team-icon {
+
+  &__link:hover > .team-icon {
     @extend %transition;
     fill: #ffffff;
   }
-  
-&__link:hover {
+
+  &__link:hover {
     @extend %transition;
     background-color: #2196f3;
   }
-  
-&__link {
+
+  &__link {
     width: 44px;
     height: 44px;
     border-radius: 100%;
@@ -73,13 +93,12 @@
     align-items: center;
     justify-content: center;
   }
-  
-&__icon-list {
+
+  &__icon-list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 42px;
   }
-
 }

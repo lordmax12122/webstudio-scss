@@ -5,6 +5,7 @@
   &__pages-container {
     display: flex;
     align-items: center;
+    
   }
 
   &__pages {
@@ -12,8 +13,18 @@
   }
 
   &__pages-list {
-    display: flex;
+    display: none;
     gap: 50px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 50px;
+    }
   }
 
   &__pages-logo {
@@ -23,6 +34,10 @@
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 24px;
+    }
   }
 
   &__secondpart-logo {
@@ -75,9 +90,21 @@
   }
 
   &__contacts-list {
-    display: flex;
     gap: 50px;
     margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+      flex-wrap: wrap;
+      margin-left: 96px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: 96px;
+    }
+
   }
 
   &__contacts-malito {
@@ -124,5 +151,19 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+
+  &__burger {
+    fill: black;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__button {
+    border: none;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }

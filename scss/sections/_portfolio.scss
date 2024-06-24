@@ -1,5 +1,5 @@
 .portfolio {
-  @include section-padding($top: 94px);
+  @include section-padding($top: 94px, $bottom: 94px);
 
   &__list {
     grid-gap: 30px;
@@ -25,7 +25,7 @@
   }
 
   &__subtitle {
-    color: $description-color;
+    color: $text-color;
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;

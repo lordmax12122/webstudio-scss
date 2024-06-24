@@ -5,12 +5,15 @@
     ),
     url(../images/background.webp);
   @include section-padding($top: 200px, $bottom: 200px);
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat no-repeat;
   background-position: center center;
+
+
+
 
   &__choices-title {
     margin-bottom: 30px;
@@ -19,15 +22,26 @@
 
     margin-left: auto;
     margin-right: auto;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 60px;
-    /* 136.364% */
-    letter-spacing: 2.64px;
+    line-height: 42px;
+    letter-spacing: 1.56px;
     text-transform: uppercase;
-    width: 696px;
+    width: 360px;
     animation-name: glide-button-down;
     animation-duration: 1s;
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 136.364%;
+      letter-spacing: 2.64px;
+      text-transform: uppercase;
+    }
+    @media screen and (max-width: 375px) {
+      width: 300px;
+    }
   }
 
   &__choices-button {

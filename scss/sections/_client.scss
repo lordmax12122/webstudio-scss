@@ -5,7 +5,11 @@
     display: flex;
     margin-top: 50px;
     gap: 30px;
-    justify-content: center;
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    flex-wrap: wrap;
+    }
+    
   }
 
   &__item {
@@ -35,5 +39,6 @@
     fill: #afb1b8;
     width: 170px;
     height: 92px;
+
   }
 }
