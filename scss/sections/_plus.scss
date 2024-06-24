@@ -4,41 +4,57 @@
   &__list {
     display: flex;
     gap: 30px;
-
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
+      width: 738px;
+      height: 480px;
       flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      width: 450px;
+      height: 994px;
     }
   }
 
-
-
   &__item:first-child:before {
-    display: block;
+    display: flex;
+    justify-content: center;
     content: url(../images/antenna.webp);
-    animation-name: glide-picture-right1;
+    @media screen and (min-width: 1200px) {
+      animation-name: glide-picture-right1;
     animation-duration: 4s;
+    }
   }
 
-
   &__item:nth-child(2):before {
-    display: block;
+    display: flex;
+    justify-content: center;
     content: url(../images/clock.webp);
-    animation-name: glide-picture-right2;
+    @media screen and (min-width: 1200px) {
+      animation-name: glide-picture-right1;
     animation-duration: 4s;
+    }
   }
 
   &__item:nth-child(3):before {
-    display: block;
+    display: flex;
+    justify-content: center;
     content: url(../images/diagram.webp);
-    animation-name: glide-picture-right3;
+    @media screen and (min-width: 1200px) {
+      animation-name: glide-picture-right1;
     animation-duration: 4s;
+    }
   }
 
   &__item:nth-child(4):before {
-    display: block;
+    display: flex;
+    justify-content: center;
     content: url(../images/astronaut.webp);
-    animation-name: glide-picture-right4;
+    @media screen and (min-width: 1200px) {
+      animation-name: glide-picture-right1;
     animation-duration: 4s;
+    }
   }
 
   &__subtitle {
@@ -52,7 +68,7 @@
     margin-top: 30px;
 
     @media screen and (max-width: 1199px) {
-      flex-wrap: wrap;
+      text-align: center;
     }
   }
 
@@ -63,5 +79,9 @@
     line-height: 24px;
     /* 171.429% */
     letter-spacing: 0.42px;
+    @media screen and (max-width: 1199px) {
+      width: 354px;
+      height: 48px;
+    }
   }
 }
