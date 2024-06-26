@@ -5,6 +5,7 @@
     grid-gap: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
   }
 
   &__item {
@@ -12,6 +13,15 @@
     border: 1px solid #eee;
     background: #fff;
     display: inline;
+    @media screen and (max-width: 767px) {
+      width: 450px;
+      width: 100%;
+      height: 404px;
+    }
+    @media screen and (max-width: 1199px) {
+      width: 354px;
+      height: 404px;
+    }
   }
 
   &__item:hover {
@@ -21,7 +31,20 @@
   }
 
   &__img {
-    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+      max-width: 450px;
+      width: 100%;
+      height: 294px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 294px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 294px;
+      margin-bottom: 20px
+    }
   }
 
   &__subtitle {

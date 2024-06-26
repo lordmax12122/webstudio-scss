@@ -1,6 +1,9 @@
 .team {
   background: #f5f4fa;
   @include section-padding($top: 94px, $bottom: 94px);
+  @media screen and (max-width: 1199px) {
+    @include section-padding($top: 60px, $bottom: 60px);
+  }
 
   &__list {
     display: flex;

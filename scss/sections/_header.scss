@@ -1,11 +1,18 @@
 .main {
   border: solid 1px #ececec;
-  @include section-padding($top: 24px, $bottom: 25px);
+  @media screen and (max-width: 767px) {
+    @include section-padding($top: 16px, $bottom: 16px);
+  }
+  @media screen and (min-width: 768px) {
+    @include section-padding($top: 26px, $bottom: 26px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include section-padding($top: 24px, $bottom: 25px);
+  }
 
   &__pages-container {
     display: flex;
     align-items: center;
-    
   }
 
   &__pages {
@@ -104,7 +111,6 @@
       display: flex;
       margin-left: 96px;
     }
-
   }
 
   &__contacts-malito {

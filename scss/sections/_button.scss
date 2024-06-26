@@ -6,6 +6,11 @@
     display: flex;
     justify-content: center;
     gap: 8px;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      align-items: start;
+      justify-content: start;
+    }
   }
 
   &__a {

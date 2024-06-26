@@ -11,6 +11,9 @@
   margin-right: auto;
   background-repeat: no-repeat no-repeat;
   background-position: center center;
+  @media screen and (max-width: 1199px) {
+    @include section-padding($top: 118px, $bottom: 118px);
+  }
 
 
 
