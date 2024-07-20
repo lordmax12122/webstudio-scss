@@ -5,10 +5,14 @@
   &__pages-logo {
     color: $accent-color;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 1.38;
     line-height: normal;
     letter-spacing: 0.78px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
 
   &__container {

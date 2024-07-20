@@ -2,25 +2,26 @@
   @include section-padding($top: 94px, $bottom: 94px);
 
   &__list {
-    grid-gap: 30px;
-    display: flex;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: start;
   }
 
   &__item {
-    $grid-card: 3;
+    --grid-card: 3;
     border: 1px solid #eee;
     background: #fff;
     display: inline;
     @media screen and (max-width: 767px) {
-      width: 450px;
+      max-width: 450px;
       width: 100%;
-      height: 404px;
+      max-height: 404px;
+      --grid-card: 1;
     }
     @media screen and (max-width: 1199px) {
       width: 354px;
       height: 404px;
+      --grid-card: 2;
     }
     }
 

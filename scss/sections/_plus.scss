@@ -21,45 +21,26 @@
     }
   }
 
-  &__item:first-child:before {
-    display: flex;
-    justify-content: center;
-    content: url(../images/antenna.webp);
-    @media screen and (min-width: 1200px) {
-      animation-name: glide-picture-right1;
-      animation-duration: 4s;
-    }
+  &__svg {
+    width: 70px;
+    height: 70px;
   }
 
-  &__item:nth-child(2):before {
-    display: flex;
-    justify-content: center;
-    content: url(../images/clock.webp);
-    @media screen and (min-width: 1200px) {
-      animation-name: glide-picture-right1;
-      animation-duration: 4s;
-    }
+  &__use {
+    fill: aqua;
   }
 
-  &__item:nth-child(3):before {
+  &__block {
+    background: #f5f4fa;
     display: flex;
+    align-items: center;
     justify-content: center;
-    content: url(../images/diagram.webp);
-    @media screen and (min-width: 1200px) {
-      animation-name: glide-picture-right1;
-      animation-duration: 4s;
-    }
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
   }
 
-  &__item:nth-child(4):before {
-    display: flex;
-    justify-content: center;
-    content: url(../images/astronaut.webp);
-    @media screen and (min-width: 1200px) {
-      animation-name: glide-picture-right1;
-      animation-duration: 4s;
-    }
-  }
+
 
   &__subtitle {
     color: $text-color;
