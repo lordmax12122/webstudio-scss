@@ -3,7 +3,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/desktop/hero.webp);
+    url(./images/desktop/hero.webp); 
   @include section-padding($top: 200px, $bottom: 200px);
   max-width: 1600px;
   max-height: 600px;
@@ -18,7 +18,7 @@
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ), url(../images/phone/hero.webp);
+    ), url(./images/phone/hero.webp);
     
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -26,36 +26,36 @@
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ), url(../images/phone/herox2.webp);
+    ), url(./images/phone/herox2.webp);
   }
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ), url(../images/tablet/hero.webp);
+    ), url(./images/tablet/hero.webp);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ), url(../images/tablet/herox2.webp);
-  }
-  }
+    ), url(./images/tablet/herox2.webp);
+   }
+   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ), url(../images/desktop/hero.webp);
+    ), url(./images/desktop/hero.webp);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ), url(../images/desktop/herox2.webp);
-  }
+    ), url(./images/desktop/herox2.webp);
+    }
   }
 
 
